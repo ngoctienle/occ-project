@@ -21,7 +21,7 @@ body {
   overflow: hidden;
   scroll-behavior: smooth;
   margin: auto;
-  @include text(var(--body16-fs), ir, var(--body16-lh), $black-cl, none);
+  @include text(var(--body16-fs), "RR", var(--body16-lh), $black-cl, null);
   position: relative;
   .container-fluid {
     width: 100%;
