@@ -1,0 +1,31 @@
+{
+  "name": "offshore-company-corp",
+  "version": "1.0.0",
+  "description": "offshore-company-corp is built by Ngoc Tien Le",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "task"
+  ],
+  "author": "Le Ngoc Tien <hi@bravethinking.io>",
+  "license": "MIT",
+  "devDependencies": {
+    "grunt": "^1.2.1",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-cssmin": "^3.0.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "^5.0.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "load-grunt-tasks": "^5.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ngoctienle/occ-project.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ngoctienle/occ-project/issues"
+  },
+  "homepage": "https://github.com/ngoctienle/occ-project#readme"
+}
