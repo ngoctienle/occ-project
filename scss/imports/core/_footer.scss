@@ -1,1 +1,32 @@
 //CSS FOOTER
+.footer {
+  background-color: $grey-cl;
+  &__main {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    .container {
+      display: flex;
+      h2 {
+        margin-bottom: 2.4rem;
+      }
+      .footer__main-left {
+        h2 {
+          margin-top: 4rem;
+        }
+        .logo-group {
+          gap: 1.6rem;
+        }
+      }
+    }
+  }
+  &__bottom {
+    border-top: 1px solid #4c4c4d;
+    padding-bottom: 3.2rem;
+    padding-top: 3.2rem;
+    text-align: center;
+    .logo-group {
+      margin-bottom: 2.5rem;
+      gap: 2.5rem;
+    }
+  }
+}
