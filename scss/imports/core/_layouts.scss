@@ -11,14 +11,14 @@
 }
 html {
   font-size: 62.5%; // => 10px = 1rem
-  overflow: hidden;
+  overflow-x: hidden;
   scroll-behavior: smooth;
 }
 body {
   background: $white-cl;
   max-width: $container-max-width;
   width: 100%;
-  overflow: hidden;
+  overflow-x: hidden;
   scroll-behavior: smooth;
   margin: auto;
   @include text(var(--body16-fs), "RR", var(--body16-lh), $black-cl, null);

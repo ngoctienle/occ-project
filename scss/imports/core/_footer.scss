@@ -1,32 +1,133 @@
 //CSS FOOTER
-.footer {
-  background-color: $grey-cl;
-  &__main {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-    .container {
-      display: flex;
-      h2 {
-        margin-bottom: 2.4rem;
-      }
-      .footer__main-left {
-        h2 {
-          margin-top: 4rem;
+.footer-wrapper {
+  .download-group {
+    background-color: #454545;
+    z-index: -1;
+    margin-bottom: -23rem;
+    padding-top: 38.8rem;
+    @include transition($t);
+    @include mobile {
+      margin-bottom: -10rem;
+    }
+  }
+  .footer {
+    position: relative;
+    z-index: 1;
+    background-color: $grey-cl;
+    &__main {
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+      .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        @include transition($t);
+        @include tablet {
+          flex-direction: column;
+          gap: 2rem;
         }
-        .logo-group {
-          gap: 1.6rem;
+        h2 {
+          margin-bottom: 2.4rem;
+          @include transition($t);
+          @include desktop {
+            margin-bottom: 2rem;
+          }
+        }
+        ul {
+          color: $white-cl;
+          font-size: var(--body14-fs);
+          line-height: var(--body14-lh);
+          font-family: "RM";
+          li {
+            margin-bottom: 1.2rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            @include transition($t);
+            @include desktop {
+              margin-bottom: 0.8rem;
+            }
+          }
+          @include transition($t);
+          @include desktop {
+            font-size: var(--body12-fs);
+            line-height: var(--body12-lh);
+          }
+        }
+        .footer__main-left {
+          h2 {
+            margin-top: 4rem;
+            @include desktop {
+              margin-top: 3rem;
+            }
+            @include tablet {
+              display: none;
+            }
+          }
+          .logo-group {
+            gap: 1.6rem;
+            justify-content: unset;
+            @include transition($t);
+            @include tablet {
+              display: none;
+            }
+          }
+        }
+        .footer__main-mid {
+          display: flex;
+          align-items: flex-end;
+          justify-content: center;
+          gap: 4rem;
+          flex: 1;
+          position: relative;
+          &::before,
+          &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            width: 1px;
+            height: 264px;
+            background-color: #dddddd;
+            @include desktop {
+              content: none;
+            }
+          }
+          &::before {
+            left: 4rem;
+          }
+          &::after {
+            right: 4rem;
+          }
+          @include transition($t);
+          @include desktop {
+            gap: 2rem;
+          }
+          @include tablet {
+            flex-wrap: wrap;
+            justify-content: flex-start;
+          }
         }
       }
     }
-  }
-  &__bottom {
-    border-top: 1px solid #4c4c4d;
-    padding-bottom: 3.2rem;
-    padding-top: 3.2rem;
-    text-align: center;
-    .logo-group {
-      margin-bottom: 2.5rem;
-      gap: 2.5rem;
+    &__bottom {
+      border-top: 1px solid #4c4c4d;
+      padding-bottom: 3.2rem;
+      padding-top: 3.2rem;
+      text-align: center;
+      .logo-group {
+        margin-bottom: 2.5rem;
+        gap: 2.5rem;
+        @include transition($t);
+        @include tablet {
+          flex-wrap: wrap;
+        }
+        img {
+          @include transition($t);
+          @include tablet {
+            @include size(10.7rem, 3rem);
+          }
+        }
+      }
     }
   }
 }

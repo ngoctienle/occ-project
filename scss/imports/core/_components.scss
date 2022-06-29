@@ -134,9 +134,57 @@ article {
     line-height: var(--body14-lh);
   }
 }
-
 .logo-group {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.btn {
+  display: flex;
+  align-items: center;
+  height: var(--height-button);
+  padding-left: 2.4rem;
+  padding-right: 2.4rem;
+  &.--is-footer-btn {
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid #dddddd;
+    gap: 10px;
+    max-width: 273px;
+    font-size: var(--body14-fs);
+    line-height: var(--body14-lh);
+  }
+}
+
+.download-group {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    @include transition($t);
+    @include tablet {
+      flex-direction: column;
+      gap: 2rem;
+      align-items: center;
+    }
+    .left__download {
+      &-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-top: 3rem;
+        .market {
+          display: flex;
+          gap: 2rem;
+          flex-direction: column;
+          img {
+            @include transition($t);
+            @include mobile {
+              @include size(13.6rem, 4rem);
+            }
+          }
+        }
+      }
+    }
+  }
 }
