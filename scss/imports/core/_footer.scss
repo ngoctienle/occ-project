@@ -121,12 +121,6 @@
         @include tablet {
           flex-wrap: wrap;
         }
-        img {
-          @include transition($t);
-          @include tablet {
-            @include size(10.7rem, 3rem);
-          }
-        }
       }
     }
   }
